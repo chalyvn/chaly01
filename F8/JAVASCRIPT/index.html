@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form-group{
+            margin-bottom: 1rem;
+        }
+        .form-group.invalid input {
+            border-color: red;
+        }
+        .form-group.invalid .form-message{
+            color: red;
+        }
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="p-5">
+    <form id="form-1" method="POST">
+        <h1>Register form</h1>
+        <div class="form-group">
+            <label for="fullName" class="form-label">Full name</label>
+            <input id="fullName" name="fullName" class="form-control" type="text" placeholder="ex: Mila Tran" required>
+            <div class="form-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" class="form-control" type="email" placeholder="ex: mila@abc.com">
+            <div class="form-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input id="password" name="email" class="form-control" type="password" placeholder="Enter password">
+            <div class="form-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password" class="form-label">Password</label>
+            <input id="confirm-password" name="email" class="form-control" type="password" placeholder="Enter password">
+            <div class="form-message"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
